@@ -24,6 +24,7 @@ public class Login : MonoBehaviour
 
 	public void TryLogin()
 	{
+		popUp.SetActive(false);
 		vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
 		md5.ComputeHash(vs);
 
@@ -34,6 +35,12 @@ public class Login : MonoBehaviour
 		};
 
 		PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
+	}
+
+	public void QuitApp()
+	{
+		Application.Quit();
+		Debug.Log("Application Quit");
 	}
 
 	private string ByteArrayToString(byte[] hash)
