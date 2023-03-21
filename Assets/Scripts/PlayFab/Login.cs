@@ -8,18 +8,23 @@ using System;
 using UnityEngine.SceneManagement;
 using System.Text;
 
-public class LoginAnon : MonoBehaviour
+public class Login : MonoBehaviour
 {
-	//From https://docs.microsoft.com/en-us/gaming/playfab/features/authentication/login/login-basics-best-practices
-	//Your game should use an anonymous login for creating a new account and linking new devices to an existing account. 
-	//We recommend this because some players may abandon a game that asks for an e-mail or identifiable information.
-	//However, once the anonymous login is complete, you should provide the option to add recoverable login credentials,
-	//and provide some explanation regarding the benefits.
+	private SHA256 md5;
+	private byte[] vs;
+
+	[SerializeField] private GameObject popUp;
+
 	void Awake()
 	{
-		SHA256 md5 = SHA256CryptoServiceProvider.Create();
+		popUp.SetActive(false);
+		md5 = SHA256CryptoServiceProvider.Create();
+		TryLogin();
+	}
 
-		byte[] vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
+	public void TryLogin()
+	{
+		vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
 		md5.ComputeHash(vs);
 
 		LoginWithCustomIDRequest request = new LoginWithCustomIDRequest
@@ -44,6 +49,7 @@ public class LoginAnon : MonoBehaviour
 	private void OnLoginFailure(PlayFabError obj)
 	{
 		Debug.Log("Connection Failed");
+		popUp.SetActive(true);
 	}
 
 	private void OnLoginSuccess(LoginResult obj)
