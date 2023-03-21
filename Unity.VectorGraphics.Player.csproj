@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6DC4958F-0495-8102-D4AC-CC8EEE0A1817}</ProjectGuid>
+    <ProjectGuid>{5CB6295B-5BB8-6D79-FF02-BBF7BB251FEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VectorGraphics</AssemblyName>
@@ -56,30 +56,30 @@
     <Analyzer Include="D:\VS\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGStyleSheet.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorRasterization.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\Clipper\C#\clipper_library\clipper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\Matrix2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorEllipse.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Mesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorSprite.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Tess.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGParser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGImage.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorImageUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorScene.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Sweep.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\MeshUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Geom.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Dict.cs" />
     <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorClip.cs" />
-    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorTessellation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorSprite.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Geom.cs" />
     <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorRectangle.cs" />
     <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorSceneTessellation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorTessellation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorRasterization.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\MeshUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorScene.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Tess.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGImage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\Clipper\C#\clipper_library\clipper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\Matrix2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Dict.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Sweep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGParser.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\External\LibTessDotNet\Mesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\SVGStyleSheet.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorEllipse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\VectorImageUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20\Runtime\Shaders\VectorGradient.cginc" />
@@ -291,11 +291,14 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:\Unity\2021.3.6f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
@@ -308,9 +311,6 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
@@ -684,11 +684,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{5AAFF37F-2670-9A0B-7D9E-1E362D2F8288}</Project>
+      <Project>{05C5DD97-B280-E557-CFD8-0CAC280FBDB7}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.003.Player.csproj">
-      <Project>{16861997-1A32-8543-7933-F96BF59D4485}</Project>
+      <Project>{C9B7CDE5-55C8-DB7E-CB6E-426A10C53820}</Project>
       <Name>Unity.InternalAPIEngineBridge.003.Player</Name>
     </ProjectReference>
   </ItemGroup>

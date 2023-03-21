@@ -57,70 +57,70 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineTrackedDollyEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseSourceEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Helpers\CinemachineTriggerActionEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseDefinitionPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\NoiseSettingsPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineGroupComposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineCollisionImpulseSourceEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseListenerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineColliderEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\EmbeddedAssetPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Windows\CinemachineColliderPrefs.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineConfiner2DEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachinePOVEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineTransposerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Windows\CinemachineSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineConfinerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\ReflectionHelpers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineTargetGroupEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineHardLockToTargetEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\SerializedPropertyHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineFreeLookEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineOrbitalTransposerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PostProcessing\CinemachinePostProcessingEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\CinemachineBlendDefinitionPropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseEnvelopePropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\AxisStatePropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBlendListCameraEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Menus\CinemachineMenu.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineHardLookAtEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBlenderSettingsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineSmoothPathEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBrainEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineComposerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\InspectorUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineClearShotEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineExternalCameraEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Experimental\CinemachineNewFreeLookEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseSourceEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineGroupComposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\CinemachineLensPresets.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\EmbeddedAssetHelpers.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\Cinemachine3rdPersonFollowEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineStoryboardEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachinePOVEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineTransposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\CinemachineEditorAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineScreenComposerGuides.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Windows\CinemachineSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineVirtualCameraBaseEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineVirtualCameraEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineConfinerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\ReflectionHelpers.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PostProcessing\CinemachineVolumeSettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineTargetGroupEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseChannels.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineHardLockToTargetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\OrbitalTransposerHeadingPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\SaveDuringPlay.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\SerializedPropertyHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineFramingTransposerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineFreeLookEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineOrbitalTransposerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PostProcessing\CinemachinePostProcessingEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\CinemachineBlendDefinitionPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachinePathEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseEnvelopePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\AxisStatePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBlendListCameraEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Menus\CinemachineMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineNoiseSettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineHardLookAtEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\ScriptableObjectUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\VcamStageEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBlenderSettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineSmoothPathEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBrainEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineComposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineMixingCameraEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\InspectorUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\VcamTargetPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Windows\WaveformWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\BaseEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineClearShotEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineExternalCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Impulse\CinemachineImpulseChannelPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\PropertyDrawers\CinemachineTagFieldPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Experimental\CinemachineNewVirtualCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineStateDrivenCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineSameAsFollowTargetEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Timeline\CinemachineShotClipEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Experimental\CinemachineNewFreeLookEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Timeline\CinemachineShotEditor.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -385,14 +385,8 @@
     <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
       <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
       <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
@@ -400,14 +394,8 @@
     <Reference Include="Microsoft.IdentityModel.Tokens">
       <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Mdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -417,6 +405,30 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -430,23 +442,11 @@
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IdentityModel.Tokens.Jwt">
-      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\System.IdentityModel.Tokens.Jwt.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Identity.Client">
-      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.Identity.Client.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\Unity\2021.3.6f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -861,13 +861,13 @@
       <Project>{0EA1710D-C24B-87E8-6536-C120DEEA28B4}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A6E9AA8C-AFD3-4846-6C52-66CD9E26F099}</Project>
-      <Name>UnityEditor.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{73BA2454-0C37-0318-EFD4-A39274777C7E}</Project>
       <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{A6E9AA8C-AFD3-4846-6C52-66CD9E26F099}</Project>
+      <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FB4BEEA3-04F7-4C35-1E3A-82D9A1A728CC}</ProjectGuid>
+    <ProjectGuid>{EEF2F1A1-E1AD-EC16-3445-055017128667}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Burst.CodeGen</AssemblyName>
@@ -57,9 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\FunctionPointerInvokeTransform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\BurstILPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\AssemblyLoader.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\ILPostProcessing.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\BurstILPostProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll" />
@@ -714,7 +714,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{9841ED1E-A824-6F6C-D75F-EC1C9376EA23}</Project>
+      <Project>{82A04727-36EF-2039-347E-83A50C934CF1}</Project>
       <Name>Unity.Burst</Name>
     </ProjectReference>
   </ItemGroup>

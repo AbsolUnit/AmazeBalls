@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18389987-8535-F749-F94C-6BCDB70BA8CF}</ProjectGuid>
+    <ProjectGuid>{02184F3A-D178-331B-A797-8FE975BF0A94}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Telemetry</AssemblyName>
@@ -56,40 +56,40 @@
     <Analyzer Include="D:\VS\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Cache\DisabledCachePersister.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Handlers\DiagnosticsHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Interfaces\ITelemetryPayload.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\CachedPayload.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Metrics\MetricsFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Metrics\DisabledMetrics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\FactoryUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Interfaces\ITelemetryEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Metrics\MetricsPayload.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\DiagnosticsFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\UnityWebRequestSender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\CacheExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Metrics\Metrics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Diagnostics\Diagnostic.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\ExponentialBackOffRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\Diagnostics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Metrics\Metric.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Cache\FileCachePersister.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\TelemetryConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\TelemetrySender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\DisabledDiagnosticsFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Handlers\TelemetryHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Diagnostics\DiagnosticsPayload.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Metrics\DisabledMetricsFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\TagKeys.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Metrics\MetricType.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Cache\ICachePersister.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\WebRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\DisabledDiagnostics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Handlers\MetricsHandler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Cache\DisabledCachePersister.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Interfaces\ITelemetryPayload.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Interfaces\ITelemetryEvent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Metrics\MetricsPayload.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\CacheExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Metrics\Metrics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Models\Diagnostics\Diagnostic.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\ExponentialBackOffRetryPolicy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Cache\FileCachePersister.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\TelemetryConfig.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\TelemetrySender.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\DisabledDiagnosticsFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Handlers\TelemetryHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Networking\IUnityWebRequestSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\TelemetryUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Diagnotstics\DisabledDiagnostics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Utils\TelemetryConfigKeys.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Handlers\MetricsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Telemetry\Unity.Services.Core.Telemetry.asmdef" />
@@ -344,29 +344,53 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Unity\2021.3.6f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>Assets\PlayFabEditorExtensions\Editor\Resources\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -379,12 +403,6 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -761,19 +779,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{A02EE1EB-4216-A09F-5727-D27D44E3D017}</Project>
+      <Project>{70EFF450-B8EB-E06E-EE28-1E6FB3DB4BCB}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Internal.csproj">
-      <Project>{4085419D-58AF-CA68-9D6C-0DAAA603A01B}</Project>
+      <Project>{35604A83-B748-BFB1-F9D6-ECFF12376747}</Project>
       <Name>Unity.Services.Core.Internal</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{062563D4-3408-FF64-B81D-CF997F5B5E5F}</Project>
+      <Project>{2636AD1A-3C05-6063-38DF-6C120281DD6B}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{7C721A3F-F05F-848E-B407-7768E85DA5A8}</Project>
+      <Project>{0EA1710D-C24B-87E8-6536-C120DEEA28B4}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7D8D7577-03AD-1391-9790-5B3FC1B24528}</ProjectGuid>
+    <ProjectGuid>{365990F5-6329-96C5-D8D5-FDA43EEA1017}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core</AssemblyName>
@@ -56,16 +56,16 @@
     <Analyzer Include="D:\VS\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Initialization\ServicesInitializationException.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\UnityServices.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\CommonErrorCodes.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\DynamicDependency\PreserveDependencyAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\RequestFailedException.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Initialization\ServicesInitializationState.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Utils\UnityThreadUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Initialization\ServicesInitializationException.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\IUnityServices.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\UnityServices.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\CommonErrorCodes.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Initialization\InitializationOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.services.core@1.4.0\Runtime\Core\Unity.Services.Core.asmdef" />
@@ -269,11 +269,14 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:\Unity\2021.3.6f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
@@ -286,9 +289,6 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
@@ -662,7 +662,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{5AAFF37F-2670-9A0B-7D9E-1E362D2F8288}</Project>
+      <Project>{05C5DD97-B280-E557-CFD8-0CAC280FBDB7}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>
