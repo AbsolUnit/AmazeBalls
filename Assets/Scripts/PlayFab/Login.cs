@@ -1,3 +1,70 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:447ca05bfb2cd89e9fdb076eb3e46295f5ef582e95d1bd932772921676f5e611
-size 1532
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Security.Cryptography;
+using PlayFab;
+using PlayFab.ClientModels;
+using System;
+using UnityEngine.SceneManagement;
+using System.Text;
+
+public class Login : MonoBehaviour
+{
+	private SHA256 md5;
+	private byte[] vs;
+
+	[SerializeField] private GameObject popUp;
+	[SerializeField] private GameObject PFevent;
+
+	void Awake()
+	{
+		popUp.SetActive(false);
+		md5 = SHA256CryptoServiceProvider.Create();
+		TryLogin();
+	}
+
+	public void TryLogin()
+	{
+		popUp.SetActive(false);
+		vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
+		md5.ComputeHash(vs);
+
+		LoginWithCustomIDRequest request = new LoginWithCustomIDRequest
+		{
+			CustomId = ByteArrayToString(md5.Hash),
+			CreateAccount = true
+		};
+
+		PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
+	}
+
+	public void QuitApp()
+	{
+		Application.Quit();
+		Debug.Log("Application Quit");
+	}
+
+	private string ByteArrayToString(byte[] hash)
+	{
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < hash.Length; i++)
+		{
+			sb.Append(hash[i]);
+		}
+		return sb.ToString();
+	}
+
+	private void OnLoginFailure(PlayFabError obj)
+	{
+		Debug.Log("Connection Failed");
+		PFevent.GetComponent<Event>().SetName("LoginFail");
+		PFevent.GetComponent<Event>().RecordEvent("Login");
+		popUp.SetActive(true);
+	}
+
+	private void OnLoginSuccess(LoginResult obj)
+	{
+		SceneManager.LoadScene("MainMenu");
+	}
+
+}

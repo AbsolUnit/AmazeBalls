@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c2229528c5d4e0308d4e5d36015d3034f8e729b499723baa5d412a6d332904d
-size 1104
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class LevelAvailability : MonoBehaviour
+{
+    public List<GameObject> levels;
+
+	private void Start()
+	{
+		for (int i = 0; i < LevelController.nextlevel; i++)
+		{
+			GetChild(levels[i], "Image (" + (i + 1) + ")").SetActive(false);
+			levels[i].GetComponent<Button>().interactable = true;
+		}
+
+		//for (int i = 0; i < LevelController.currentlevel - 1; i++)
+		//{
+		//	if (i == LevelController.currentlevel - 1)
+		//	{
+		//		GetChild(levels[i], "Time (" + (i + 1) + ")").GetComponent<TextMeshProUGUI>().text = LevelController.lastTime;
+		//	}
+		//}
+
+		for (int j = 0; j < LevelController.currentlevel; j++){
+			GetChild(levels[j], "Time (" + (j + 1) + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[j];
+		}
+		
+	}
+
+	private GameObject GetChild(GameObject parent,string name)
+	{
+		foreach (Transform child in parent.transform)
+		{
+			if (child.name == name)
+			{
+				return child.gameObject;
+			}
+		}
+		return null;
+	}
+}

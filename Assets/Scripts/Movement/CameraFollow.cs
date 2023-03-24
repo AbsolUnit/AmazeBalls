@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a32ce5523fbaae5583383c373ee9248ca2f1403362199dac1ec8cbc578a1c0a
-size 582
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraFollow : MonoBehaviour
+{
+
+    public GameObject ball;
+    public float moveSpeed = 0.5f;
+    private Vector3 posGoal;
+
+    // Start is called before the first frame update
+    void Update()
+    {
+        posGoal = new Vector3(ball.transform.position.x, ball.transform.position.y + 20, ball.transform.position.z);
+        transform.position = Vector3.Slerp(transform.position, posGoal, moveSpeed);
+        //transform.rotation = Quaternion.Euler(45, 0, 0);
+    }
+}
