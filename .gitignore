@@ -28566,3 +28566,4 @@ UnityEngine.TestRunner.csproj
 UnityEngine.TestRunner.Player.csproj
 UnityEngine.UI.csproj
 UnityEngine.UI.Player.csproj
+Library/BurstCache/JIT/CacheManifest.json
