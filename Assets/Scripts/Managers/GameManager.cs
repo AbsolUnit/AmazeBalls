@@ -71,10 +71,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
-    public void QuitApp()
-	{
-        Application.Quit();
+    public void QuitApp() {
         Debug.Log("Quit");
+        SceneManager.LoadScene("Saving");
     }
 
     private void LevelGen(int level)

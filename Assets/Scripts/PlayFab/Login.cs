@@ -7,6 +7,7 @@ using PlayFab.ClientModels;
 using System;
 using UnityEngine.SceneManagement;
 using System.Text;
+using Newtonsoft.Json;
 
 public class Login : MonoBehaviour
 {
@@ -64,7 +65,38 @@ public class Login : MonoBehaviour
 
 	private void OnLoginSuccess(LoginResult obj)
 	{
+		GetUserData();
+	}
+
+	private void GetUserData()
+	{
+		PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnDataSuccess, OnDataFailure);
+	}
+
+	private void OnDataSuccess(GetUserDataResult result)
+	{
+		if (result.Data != null && result.Data.ContainsKey("Current") && result.Data.ContainsKey("Next") && result.Data.ContainsKey("LastT") && result.Data.ContainsKey("ListT"))
+		{
+			SetUserData(result.Data["Current"].Value, result.Data["Next"].Value, result.Data["LastT"].Value, result.Data["ListT"].Value);
+		}
+		else
+		{
+			Debug.Log("Plafab Data Incomplete");
+		}
 		SceneManager.LoadScene("MainMenu");
+	}
+
+	private void OnDataFailure(PlayFabError obj)
+	{
+		Debug.Log("Data Failure!");
+	}
+
+	private void SetUserData(string current, string next, string lastT, string listT)
+	{
+		LevelController.timeList = JsonConvert.DeserializeObject<List<string>>(listT);
+		LevelController.lastTime = lastT;
+		LevelController.currentlevel = int.Parse(current);
+		LevelController.nextlevel = int.Parse(next);
 	}
 
 }

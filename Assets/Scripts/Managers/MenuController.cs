@@ -20,8 +20,8 @@ public class MenuController : MonoBehaviour
 		}
 		else if (level == -3)
 		{
-			Application.Quit();
 			Debug.Log("Application Quit");
+			SceneManager.LoadScene("Saving");
 		}
 		else
 		{
