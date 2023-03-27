@@ -3,11 +3,12 @@
     {
       "name": "Packages from jillejr",
       "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity/",
-      "scopes": ["jillejr"]
+      "scopes": [
+        "jillejr"
+      ]
     }
   ],
   "dependencies": {
-    "jillejr.newtonsoft.json-for-unity": "12.0.201",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.15.18",
     "com.unity.feature.development": "1.0.1",
@@ -22,6 +23,7 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.vectorgraphics": "2.0.0-preview.20",
     "com.unity.visualscripting": "1.7.8",
+    "jillejr.newtonsoft.json-for-unity": "13.0.102",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

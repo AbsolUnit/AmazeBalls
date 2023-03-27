@@ -73,6 +73,12 @@ public class GameManager : MonoBehaviour
 
     public void QuitApp() {
         Debug.Log("Quit");
+        if (finished)
+        {
+            LevelController.timeList[LevelController.currentlevel - 1] = timer.timerText;
+            LevelController.currentlevel = LevelController.nextlevel;
+            LevelController.nextlevel++;
+        }
         SceneManager.LoadScene("Saving");
     }
 
