@@ -24,7 +24,7 @@ public class LevelAvailability : MonoBehaviour
 		//	}
 		//}
 
-		for (int j = 1; j < LevelController.currentlevel; j++){
+		for (int j = 1; j < LevelController.nextlevel; j++){
 			GetChild(levels[j - 1], "Time (" + (j) + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[j - 1];
 		}
 		

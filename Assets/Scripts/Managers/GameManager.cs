@@ -44,23 +44,25 @@ public class GameManager : MonoBehaviour
 
         if (finished)
         {
+            go = false;
             complete.SetActive(!active);
             dof.mode.overrideState = true;
             ball.active = false;
-            UpdateTime();
 		}
     }
 
 	public void LoadMenu()
 	{
-        UpdateStats();
+		UpdateTime();
+		UpdateStats();
 		Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
 	}
 
     public void LoadNext()
     {
-        UpdateStats();
+		UpdateTime();
+		UpdateStats();
 		Time.timeScale = 1;
         LevelGen(LevelController.currentlevel);
         SceneManager.LoadScene("Main");
@@ -69,6 +71,7 @@ public class GameManager : MonoBehaviour
     public void QuitApp()
     {
         Debug.Log("Quit");
+        UpdateTime();
         UpdateStats();
 		SceneManager.LoadScene("Saving");
     }
@@ -84,7 +87,6 @@ public class GameManager : MonoBehaviour
     {
 		if (finished && LevelController.currentlevel == LevelController.nextlevel - 1)
 		{
-            UpdateTime();
             LevelController.currentlevel = LevelController.nextlevel;
             LevelController.nextlevel++;
 		}
@@ -104,7 +106,7 @@ public class GameManager : MonoBehaviour
         int oldI = int.Parse(oldS.Substring(0, 2)) + int.Parse(oldS.Substring(3, 2));
         string newS = timer.timerText;
 		int newI = int.Parse(newS.Substring(0, 2)) + int.Parse(newS.Substring(3, 2));
-        if (newI > oldI)
+        if (newI < oldI)
         {
             return true;
         }
