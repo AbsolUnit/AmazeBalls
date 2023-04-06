@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
 	{
 		if(level == 0)
 		{
-			LevelGen(LevelController.nextlevel);
+			LevelGen(LevelController.currentlevel);
 			SceneManager.LoadScene("Main");
 		}
 		else if (level == -1)

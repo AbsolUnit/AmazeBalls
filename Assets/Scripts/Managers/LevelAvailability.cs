@@ -10,10 +10,10 @@ public class LevelAvailability : MonoBehaviour
 
 	private void Start()
 	{
-		for (int i = 0; i < LevelController.nextlevel; i++)
+		for (int i = 1; i < LevelController.nextlevel; i++)
 		{
-			GetChild(levels[i], "Image (" + (i + 1) + ")").SetActive(false);
-			levels[i].GetComponent<Button>().interactable = true;
+			GetChild(levels[i - 1], "Image (" + (i) + ")").SetActive(false);
+			levels[i - 1].GetComponent<Button>().interactable = true;
 		}
 
 		//for (int i = 0; i < LevelController.currentlevel - 1; i++)
@@ -24,8 +24,8 @@ public class LevelAvailability : MonoBehaviour
 		//	}
 		//}
 
-		for (int j = 0; j < LevelController.currentlevel; j++){
-			GetChild(levels[j], "Time (" + (j + 1) + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[j];
+		for (int j = 1; j < LevelController.currentlevel; j++){
+			GetChild(levels[j - 1], "Time (" + (j) + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[j - 1];
 		}
 		
 	}

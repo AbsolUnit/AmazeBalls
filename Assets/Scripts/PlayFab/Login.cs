@@ -29,6 +29,7 @@ public class Login : MonoBehaviour
 		popUp.SetActive(false);
 		vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
 		md5.ComputeHash(vs);
+		Debug.Log(ByteArrayToString(md5.Hash));
 
 		LoginWithCustomIDRequest request = new LoginWithCustomIDRequest
 		{
@@ -58,9 +59,11 @@ public class Login : MonoBehaviour
 	private void OnLoginFailure(PlayFabError obj)
 	{
 		Debug.Log("Connection Failed");
+		Debug.Log(obj);
+		popUp.SetActive(true);
 		PFevent.GetComponent<Event>().SetName("LoginFail");
 		PFevent.GetComponent<Event>().RecordEvent("Login");
-		popUp.SetActive(true);
+		
 	}
 
 	private void OnLoginSuccess(LoginResult obj)

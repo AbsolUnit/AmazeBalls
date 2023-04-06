@@ -47,39 +47,30 @@ public class GameManager : MonoBehaviour
             complete.SetActive(!active);
             dof.mode.overrideState = true;
             ball.active = false;
-            LevelController.timeList[LevelController.currentlevel - 1] = timer.timerText;
-        }
+            UpdateTime();
+		}
     }
 
 	public void LoadMenu()
 	{
-        if (finished)
-		{
-            LevelController.currentlevel = LevelController.nextlevel;
-            LevelController.nextlevel++;
-		}
-        Time.timeScale = 1;
+        UpdateStats();
+		Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
 	}
 
     public void LoadNext()
     {
-        LevelController.currentlevel = LevelController.nextlevel;
-        LevelController.nextlevel++;
-        Time.timeScale = 1;
-        LevelGen(LevelController.nextlevel);
+        UpdateStats();
+		Time.timeScale = 1;
+        LevelGen(LevelController.currentlevel);
         SceneManager.LoadScene("Main");
     }
 
-    public void QuitApp() {
+    public void QuitApp()
+    {
         Debug.Log("Quit");
-        if (finished)
-        {
-            LevelController.timeList[LevelController.currentlevel - 1] = timer.timerText;
-            LevelController.currentlevel = LevelController.nextlevel;
-            LevelController.nextlevel++;
-        }
-        SceneManager.LoadScene("Saving");
+        UpdateStats();
+		SceneManager.LoadScene("Saving");
     }
 
     private void LevelGen(int level)
@@ -87,5 +78,36 @@ public class GameManager : MonoBehaviour
         LevelController.currentlevel = level;
         LevelController.mazeScale = 10f;
         LevelController.mazeSize = 4 + level;
+    }
+
+    private void UpdateStats()
+    {
+		if (finished && LevelController.currentlevel == LevelController.nextlevel - 1)
+		{
+            UpdateTime();
+            LevelController.currentlevel = LevelController.nextlevel;
+            LevelController.nextlevel++;
+		}
+	}
+
+    private void UpdateTime()
+    {
+        if (finished && CheckTime())
+        {
+            LevelController.timeList[LevelController.currentlevel - 1] = timer.timerText;
+        }
+    }
+
+    private bool CheckTime()
+    {
+        string oldS = LevelController.timeList[LevelController.currentlevel - 1];
+        int oldI = int.Parse(oldS.Substring(0, 2)) + int.Parse(oldS.Substring(3, 2));
+        string newS = timer.timerText;
+		int newI = int.Parse(newS.Substring(0, 2)) + int.Parse(newS.Substring(3, 2));
+        if (newI > oldI)
+        {
+            return true;
+        }
+		return false;
     }
 }
