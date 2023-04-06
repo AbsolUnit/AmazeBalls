@@ -212,7 +212,8 @@ public class MazeGen : MonoBehaviour
     void Start()
     {
         //Setup
-        gm = GameObject.FindWithTag("GameManager");
+        UnityEngine.Random.InitState(size);
+		gm = GameObject.FindWithTag("GameManager");
         gm.GetComponent<ScaleCoolDown>().maze = gameObject.GetComponent<MazeGen>();
         mazeStack = new Stack<int[]> { };
         posOffset = ((scale * size) / 2) - scale / 2;
