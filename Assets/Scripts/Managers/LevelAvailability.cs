@@ -17,7 +17,17 @@ public class LevelAvailability : MonoBehaviour
 		{
 			GetChild(levels[i - 1], "Image (" + i + ")").SetActive(false);
 			GetChild(levels[i - 1], "Time (" + i + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[i - 1];
-			GetChild(GetChild(levels[i - 1], "StarContainer"), "StarG (" + i + ")").GetComponent<Image>().sprite = goldStar;
+			if (CompTime(LevelController.timeList[i - 1], LevelController.goldList[i - 1])){
+				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarG").GetComponent<Image>().sprite = goldStar;
+			}
+			if (CompTime(LevelController.timeList[i - 1], LevelController.silverList[i - 1]))
+			{
+				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarS").GetComponent<Image>().sprite = silverStar;
+			}
+			if (TimeVal(LevelController.timeList[i - 1]) > 0)
+			{
+				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarB").GetComponent<Image>().sprite = bronzeStar;
+			}
 			levels[i - 1].GetComponent<Button>().interactable = true;
 		}
 		
@@ -33,5 +43,22 @@ public class LevelAvailability : MonoBehaviour
 			}
 		}
 		return null;
+	}
+
+	private bool CompTime(string a, string b)
+	{
+		int aI = TimeVal(a);
+		int bI = TimeVal(b);
+		if (aI >= bI)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	private int TimeVal(string t)
+	{
+		int tI = int.Parse(t.Substring(0, 2)) * 60 + int.Parse(t.Substring(3, 2));
+		return tI;
 	}
 }

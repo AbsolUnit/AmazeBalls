@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,12 +18,19 @@ public class GameManager : MonoBehaviour
     private DepthOfField dof;
     public VolumeProfile vol;
     public TextMeshProUGUI levelCount;
-    public BallMove ball;
+    public GameObject noMoreText;
+    public Button nextButt;
+	public Image starS;
+	public Image starG;
+	public Sprite goldStar;
+	public Sprite silverStar;
+	public BallMove ball;
     public Timer timer;
 
     void Awake()
     {
-        levelCount.text = "Level: " + LevelController.currentlevel.ToString();
+		noMoreText.SetActive(false);
+		levelCount.text = "Level: " + LevelController.currentlevel.ToString();
         pause.SetActive(false);
         complete.SetActive(false);
         vol.TryGet<DepthOfField>(out dof);
@@ -46,8 +54,21 @@ public class GameManager : MonoBehaviour
         {
             go = false;
             complete.SetActive(!active);
+            if (LevelController.currentlevel >= 12)
+            {
+                noMoreText.SetActive(true);
+                nextButt.interactable = false;
+            }
             dof.mode.overrideState = true;
             ball.active = false;
+            if (TimeVal(timer.timerText) >= TimeVal(LevelController.silverList[LevelController.currentlevel - 1]))
+            {
+                starS.sprite = silverStar;
+            }
+			if (TimeVal(timer.timerText) >= TimeVal(LevelController.goldList[LevelController.currentlevel - 1]))
+			{
+				starG.sprite = goldStar;
+			}
 		}
     }
 
@@ -103,13 +124,19 @@ public class GameManager : MonoBehaviour
     private bool CheckTime()
     {
         string oldS = LevelController.timeList[LevelController.currentlevel - 1];
-        int oldI = int.Parse(oldS.Substring(0, 2)) + int.Parse(oldS.Substring(3, 2));
-        string newS = timer.timerText;
-		int newI = int.Parse(newS.Substring(0, 2)) + int.Parse(newS.Substring(3, 2));
-        if (newI < oldI)
+        int oldI = TimeVal(oldS);
+		string newS = timer.timerText;
+		int newI = TimeVal(newS);
+		if (newI > oldI && oldI != 0)
         {
-            return true;
+            return false;
         }
-		return false;
+		return true;
     }
+
+	private int TimeVal(string t)
+	{
+		int tI = int.Parse(t.Substring(0, 2)) * 60 + int.Parse(t.Substring(3, 2));
+		return tI;
+	}
 }
