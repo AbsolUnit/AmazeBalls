@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
             if (TimeVal(timer.timerText) <= TimeVal(LevelController.silverList[LevelController.currentlevel - 1]))
             {
                 starS.sprite = silverStar;
+<<<<<<< Updated upstream
 				tGoalS.enabled = false;
 			}
             else
@@ -82,6 +83,12 @@ public class GameManager : MonoBehaviour
             else
             {
 				tGoalG.enabled = true;
+=======
+				if (TimeVal(timer.timerText) <= TimeVal(LevelController.goldList[LevelController.currentlevel - 1]))
+				{
+					starG.sprite = goldStar;
+				}
+>>>>>>> Stashed changes
 			}
 		}
     }

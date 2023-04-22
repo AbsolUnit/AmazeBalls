@@ -17,7 +17,10 @@ public class LevelAvailability : MonoBehaviour
 		{
 			GetChild(levels[i - 1], "Image (" + i + ")").SetActive(false);
 			GetChild(levels[i - 1], "Time (" + i + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[i - 1];
+<<<<<<< Updated upstream
 			
+=======
+>>>>>>> Stashed changes
 			if (TimeVal(LevelController.timeList[i - 1]) > 0)
 			{
 				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarB").GetComponent<Image>().sprite = bronzeStar;
