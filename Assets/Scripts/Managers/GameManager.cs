@@ -21,7 +21,9 @@ public class GameManager : MonoBehaviour
     public GameObject noMoreText;
     public Button nextButt;
 	public Image starS;
+    public TextMeshProUGUI tGoalS;
 	public Image starG;
+	public TextMeshProUGUI tGoalG;
 	public Sprite goldStar;
 	public Sprite silverStar;
 	public BallMove ball;
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+		tGoalS.text = LevelController.silverList[LevelController.currentlevel - 1];
+		tGoalG.text = LevelController.goldList[LevelController.currentlevel - 1];
 		noMoreText.SetActive(false);
 		levelCount.text = "Level: " + LevelController.currentlevel.ToString();
         pause.SetActive(false);
@@ -61,13 +65,23 @@ public class GameManager : MonoBehaviour
             }
             dof.mode.overrideState = true;
             ball.active = false;
-            if (TimeVal(timer.timerText) >= TimeVal(LevelController.silverList[LevelController.currentlevel - 1]))
+            if (TimeVal(timer.timerText) <= TimeVal(LevelController.silverList[LevelController.currentlevel - 1]))
             {
                 starS.sprite = silverStar;
-            }
-			if (TimeVal(timer.timerText) >= TimeVal(LevelController.goldList[LevelController.currentlevel - 1]))
+				tGoalS.enabled = false;
+			}
+            else
+            {
+				tGoalS.enabled = true;
+			}
+			if (TimeVal(timer.timerText) <= TimeVal(LevelController.goldList[LevelController.currentlevel - 1]))
 			{
 				starG.sprite = goldStar;
+                tGoalG.enabled = false;
+			}
+            else
+            {
+				tGoalG.enabled = true;
 			}
 		}
     }

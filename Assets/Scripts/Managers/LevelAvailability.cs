@@ -17,17 +17,20 @@ public class LevelAvailability : MonoBehaviour
 		{
 			GetChild(levels[i - 1], "Image (" + i + ")").SetActive(false);
 			GetChild(levels[i - 1], "Time (" + i + ")").GetComponent<TextMeshProUGUI>().text = LevelController.timeList[i - 1];
-			if (CompTime(LevelController.timeList[i - 1], LevelController.goldList[i - 1])){
-				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarG").GetComponent<Image>().sprite = goldStar;
-			}
-			if (CompTime(LevelController.timeList[i - 1], LevelController.silverList[i - 1]))
-			{
-				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarS").GetComponent<Image>().sprite = silverStar;
-			}
+			
 			if (TimeVal(LevelController.timeList[i - 1]) > 0)
 			{
 				GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarB").GetComponent<Image>().sprite = bronzeStar;
+				if (CompTime(LevelController.timeList[i - 1], LevelController.silverList[i - 1]))
+				{
+					GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarS").GetComponent<Image>().sprite = silverStar;
+					if (CompTime(LevelController.timeList[i - 1], LevelController.goldList[i - 1]))
+					{
+						GetChild(GetChild(levels[i - 1], "StarContainer (" + i + ")"), "StarG").GetComponent<Image>().sprite = goldStar;
+					}
+				}
 			}
+
 			levels[i - 1].GetComponent<Button>().interactable = true;
 		}
 		
@@ -49,7 +52,7 @@ public class LevelAvailability : MonoBehaviour
 	{
 		int aI = TimeVal(a);
 		int bI = TimeVal(b);
-		if (aI >= bI)
+		if (aI <= bI)
 		{
 			return true;
 		}
