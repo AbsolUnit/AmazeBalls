@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 
 public class SaveData : MonoBehaviour
 {
+    public Event playFabEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,11 @@ public class SaveData : MonoBehaviour
     void OnSuccess(UpdateUserDataResult obj)
 	{
         Debug.Log("Successfully Saved!");
-        Application.Quit();
+		var epochStart = new System.DateTime(1970, 1, 1, 8, 0, 0, System.DateTimeKind.Utc);
+		double timestamp = (System.DateTime.UtcNow - epochStart).TotalSeconds;
+        playFabEvent.SetName("SessionLen");
+        playFabEvent.RecordEvent((timestamp - LevelController.sessionStart).ToString());
+		Application.Quit();
 	}
 
     void OnFailure(PlayFabError obj)

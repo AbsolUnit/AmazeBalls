@@ -56,4 +56,5 @@ public class LevelController : MonoBehaviour
 		"01:05",
 		"01:00"
 	};
+	public static double sessionStart;
 }

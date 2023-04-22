@@ -29,7 +29,6 @@ public class Login : MonoBehaviour
 		popUp.SetActive(false);
 		vs = Encoding.ASCII.GetBytes(SystemInfo.deviceUniqueIdentifier);
 		md5.ComputeHash(vs);
-		Debug.Log(ByteArrayToString(md5.Hash));
 
 		LoginWithCustomIDRequest request = new LoginWithCustomIDRequest
 		{
@@ -86,6 +85,10 @@ public class Login : MonoBehaviour
 		{
 			Debug.Log("Plafab Data Incomplete");
 		}
+		var epochStart = new System.DateTime(1970, 1, 1, 8, 0, 0, System.DateTimeKind.Utc);
+		double timestamp = (System.DateTime.UtcNow - epochStart).TotalSeconds;
+		Debug.Log(timestamp);
+		LevelController.sessionStart = timestamp;
 		SceneManager.LoadScene("MainMenu");
 	}
 

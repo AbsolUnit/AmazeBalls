@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+
 	public void LoadScene(int level)
 	{
 		if(level == 0)
