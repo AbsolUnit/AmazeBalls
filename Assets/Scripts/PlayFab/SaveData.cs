@@ -32,6 +32,8 @@ public class SaveData : MonoBehaviour
 		double timestamp = (System.DateTime.UtcNow - epochStart).TotalSeconds;
         playFabEvent.SetName("SessionLen");
         playFabEvent.RecordEvent((timestamp - LevelController.sessionStart).ToString());
+		playFabEvent.SetName("QuitStage");
+		playFabEvent.RecordEvent((LevelController.currentlevel).ToString());
 		Application.Quit();
 	}
 
